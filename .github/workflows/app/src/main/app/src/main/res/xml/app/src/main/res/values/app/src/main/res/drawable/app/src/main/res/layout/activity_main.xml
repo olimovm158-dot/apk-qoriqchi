@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFC"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="APK Qo'riqchi"
+        android:textColor="#0F172A"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Firibgar APK fayllardan doimiy himoya"
+        android:textColor="#64748B"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/app_logo" />
+
+    <!-- Himoya holati kartochkasi -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="2dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="#CBD5E1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvStatusTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Himoya: O'chirilgan"
+                android:textColor="#DC2626"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvStatusDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Ilovani faollashtirish uchun ruxsat bering"
+                android:textColor="#64748B"
+                android:textSize="13sp"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btnEnable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#1565C0"
+                android:text="Himoyani yoqish"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Ilovalarni tekshirish tugmasi -->
+    <Button
+        android:id="@+id/btnScan"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:backgroundTint="#1E293B"
+        android:text="O'rnatilgan ilovalarni tekshirish"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        app:cornerRadius="12dp" />
+
+</LinearLayout>
